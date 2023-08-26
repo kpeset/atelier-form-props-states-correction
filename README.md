@@ -1,4 +1,4 @@
-# Gestion d'un formulaire avec les States et les Props
+# Création d'un formulaire avec les States et les Props
 
 ## Description de l'atelier
 

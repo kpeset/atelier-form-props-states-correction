@@ -1,8 +1,17 @@
-# React + Vite
+# Gestion d'un formulaire avec les States et les Props
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description de l'atelier
 
-Currently, two official plugins are available:
+Dans cet atelier, nous devions rendre notre formulaire dynamique en respectant les critères suivants :
+- Récupérer les valeurs des inputs
+- Afficher un message selon les valeurs qui ont été envoyées
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Récupération des valeurs
+
+Pour cela nous avons utilisé useState afin de gérer nos états.
+
+## Afficher un message personnalisé
+
+Création d'un composant FlashStatus dans lequel nous faisons passer des props.
+
+

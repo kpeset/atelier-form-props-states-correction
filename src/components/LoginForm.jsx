@@ -4,45 +4,43 @@ import FlashStatus from "./FlashStatus";
 
 const LoginForm = ({ userName, password }) => {
 
-    const [user, setUser] = useState({
-        userName: undefined,
-        password: undefined
-    })
+    const [formUserName, setFormUserName] = useState(undefined)
+    const [formPassword, setFormPassword] = useState(undefined)
 
     const [displayMessage, setDisplayMessage] = useState(false)
 
     const [messageStatus, setMessageStatus] = useState(undefined)
 
-    const handleChangeValues = (event) => {
-        setUser({
-            ...user,
-            [event.target.name]: event.target.value
-        })
-    }
 
-    console.log(user)
+
+const handleChangeUsername = (event) => {
+    setFormUserName(event.target.value)
+}
+
+const handleChangePassword = (event) => {
+    setFormPassword(event.target.value)
+}
 
     const submitForm = (event) => {
 
         setDisplayMessage(true)
 
-        if (user.userName === userName && user.password === password) {
+        if (userName === formUserName && password === formPassword) {
             setMessageStatus("Connexion réussie. Veuillez patienter...")
-        } else if (!user.userName || !user.password) {
+        } else if (!formUserName || !formPassword) {
             setMessageStatus("Veuillez remplir tous les champs.")
         } else {
             setMessageStatus("Erreur de connexion.")
         }
 
         event.preventDefault()
-
     }
 
     return (
         <>
             <form onSubmit={submitForm}>
-                <input type="text" placeholder="Nom d'utilisateur" name="userName" onChange={handleChangeValues} />
-                <input type="password" placeholder="Mot de passe" name="password" onChange={handleChangeValues} />
+                <input type="text" placeholder="Nom d'utilisateur" name="userName" onChange={handleChangeUsername} />
+                <input type="password" placeholder="Mot de passe" name="password" onChange={handleChangePassword} />
                 <input type="submit" />
                 {displayMessage ? <FlashStatus message={messageStatus} /> : ""}
             </form>

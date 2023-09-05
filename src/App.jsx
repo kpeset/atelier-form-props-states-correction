@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import LoginForm from "./assets/components/LoginForm"
+import LoginForm from "./components/LoginForm"
 
 function App() {
 

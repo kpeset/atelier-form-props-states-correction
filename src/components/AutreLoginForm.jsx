@@ -1,3 +1,7 @@
+/* AUTRE SYNTAXE */
+/* Dans cette syntaxe on ne crée pas deux états (loginUserName et loginPassword), mais */
+/* un seul état user qui est un objet */
+
 import { useState } from "react";
 import PropTypes from "prop-types"
 import FlashStatus from "./FlashStatus";

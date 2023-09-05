@@ -15,7 +15,8 @@ Avant toute chose, nous spécifions quel utilisateur sera autorisé. Pour cela n
 
 ```
   const allowedUser = {
-    userName: "`userName`    `password`: "secret".
+    userName: "userName",
+    password: "secret"
   }
 ```
 Et nous appelons notre composant en envoyant nos props venant de la variable `allowedUser`. 

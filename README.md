@@ -1,5 +1,7 @@
 # Création d'un formulaire avec les States et les Props
 
+![Apercu du resultat final](https://github.com/kpeset/atelier-form-props-states-correction/blob/main/public/atelier1Simpson.JPG?raw=true)
+
 ## Description de l'atelier
 
 Dans cet atelier, nous devions rendre notre formulaire dynamique en respectant les critères suivants :

@@ -13,8 +13,7 @@ Avant toute chose, nous spécifions quel utilisateur sera autorisé. Pour cela n
 
 ```
   const allowedUser = {
-    userName: "admin",
-    password: "secret"
+    userName: "`userName`    `password`: "secret".
   }
 ```
 Et nous appelons notre composant en envoyant nos props venant de la variable `allowedUser`. 
@@ -139,6 +138,9 @@ FlashStatus.propTypes = {
 export default FlashStatus
 ```
 
+## BONUS
+
+Il y a un composant `AutreLoginForm.jsx` dans l'application. Ici on se passe des deux états `loginUserName` et `loginPassword`. On les remplace par un objet qui contient les propriétés `userName` et `password`.
 
 
 
